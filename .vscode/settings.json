@@ -1,3 +1,31 @@
 {
-    "liveServer.settings.port": 5501
+    "liveServer.settings.port": 5501,
+    "bracketPairColorizer.consecutivePairColors": [
+        [
+            "<",
+            "</"
+        ],
+        [
+            "<",
+            "/>"
+        ],
+        [
+            "(",
+            ")"
+        ],
+        [
+            "[",
+            "]"
+        ],
+        [
+            "{",
+            "}"
+        ],
+        [
+            "Gold",
+            "Orchid",
+            "LightSkyBlue"
+        ],
+        "Red"
+    ],
 }
