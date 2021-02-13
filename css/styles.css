@@ -59,16 +59,16 @@ p {
 
 /* *!Хедер  */
 
-.line {
+.header-line {
   border-bottom: 1px solid #ececec;
 }
 
-.container.header {
+.container.page-header {
   display: flex;
   justify-content: space-between;
 }
 
-.page-navi {
+.page-nav {
   display: flex;
   align-items: center;
 
@@ -80,11 +80,11 @@ p {
   color: #212121;
 }
 
-.menu {
+.page-header__menu {
   display: flex;
 }
 
-.menu .item:not(:last-child) {
+.page-header__menu .page-header__item:not(:last-child) {
   margin-right: 50px;
 }
 
@@ -104,7 +104,7 @@ p {
   color: var(--acent-color);
 }
 
-.page-nav-link {
+.page-header__link {
   position: relative;
 
   bottom: 0;
@@ -120,11 +120,11 @@ p {
   color: #212121;
 }
 
-.page-nav-link.current {
+.page-header__link.current {
   color: var(--acent-color);
 }
 
-.contact {
+.page-nav__contact {
   display: flex;
 
   font-weight: 500;
@@ -133,11 +133,11 @@ p {
   letter-spacing: 0.02em;
 }
 
-.contact .item:not(:last-child) {
+.page-nav__contact .page-nav__item:not(:last-child) {
   margin-right: 50px;
 }
 
-.contact-link {
+.page-nav__link {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -146,37 +146,25 @@ p {
   text-decoration: none;
 }
 
-.ico-cont {
+.page-nav__ico {
   margin-right: 10px;
 }
 
-.page-nav-link:hover,
-.page-nav-link:focus,
-.contact-link:hover,
-.contact-link:focus {
+.page-header__link:hover,
+.page-header__link:focus,
+.page-nav__link:hover,
+.page-nav__link:focus {
   color: var(--acent-color);
   fill: #2196f3;
 }
 
-/* .page-nav-link.current::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: -2px;
-  display: block;
-  width: 100%;
-  height: 4px;
-  background-color: var(--accent-color);
-  border-radius: 2px;
-} */
-
-.menu .page-nav-link.current {
+.page-header__menu .page-header__link.current {
   position: relative;
 
   text-decoration: none;
 }
 
-.page-nav-link.current::after {
+.page-header__link.current::after {
   position: absolute;
   bottom: -1px;
   content: '';
@@ -374,7 +362,7 @@ p {
   text-align: center;
 }
 
-.hero .title {
+.hero-title {
   margin-top: 0;
   margin-bottom: 30px;
 
@@ -397,7 +385,7 @@ p {
   cursor: pointer;
 }
 
-.hero-btn > .text {
+.hero-btn__text {
   display: block;
   margin-left: 32px;
   margin-right: 32px;
@@ -436,11 +424,11 @@ p {
   background-color: var(--background-color);
 }
 
-.list-special {
+.special-list {
   display: flex;
 }
 
-.list-special .item:not(:last-child) {
+.special-list .special-list__item:not(:last-child) {
   margin-right: 30px;
 }
 
@@ -452,7 +440,7 @@ p {
   background: #f5f4fa;
 }
 
-.spec-container .icon {
+.spec-container__icon {
   width: 70px;
   height: 70px;
   margin-top: 25px;
@@ -489,11 +477,11 @@ p {
   display: flex;
 }
 
-.doing-list .item:not(:last-child) {
+.doing-list .doing-list__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.doing-list .item {
+.doing-list__item {
   position: relative;
 }
 
@@ -508,14 +496,14 @@ p {
   color: #212121;
 }
 
-.thumb {
+.doings__thumb {
   position: absolute;
   bottom: 3.5px;
   margin: 0;
   width: 100%;
   background-color: rgba(47, 48, 58, 0.8);
 }
-.thumb > .label {
+.doings__label {
   margin: 0;
   padding: 27px 82px 27px 83px;
   font-weight: 700;
@@ -540,7 +528,7 @@ p {
   display: flex;
 }
 
-.team-list .item {
+.team-list__item {
   max-width: 270px;
   background-color: #fff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -548,7 +536,7 @@ p {
   border-radius: 0px 0px 4px 4px;
 }
 
-.team-list .item:not(:last-child) {
+.team-list__item:not(:last-child) {
   margin-right: 30px;
 }
 
@@ -563,7 +551,7 @@ p {
   color: #212121;
 }
 
-.item .item-title {
+.team-list__title {
   margin-top: 30px;
   margin-bottom: 10px;
 
@@ -575,7 +563,7 @@ p {
   color: #212121;
 }
 
-.item .item-text {
+.team-list__text {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
@@ -583,7 +571,7 @@ p {
   text-align: center;
   color: #757575;
 }
-.social-team .social-list {
+.social-team__list {
   display: flex;
   margin-left: 32px;
   margin-top: 16px;
@@ -591,7 +579,7 @@ p {
   margin-right: 32px;
 }
 
-.social-link {
+.social-team__link {
   display: inline-block;
   width: 44px;
   height: 44px;
@@ -601,20 +589,20 @@ p {
   border-radius: 50%;
 }
 
-.social-link:hover,
-.social-link:focus {
+.social-team__link:hover,
+.social-team__link:focus {
   background-color: var(--acent-color);
   color: #fff;
 }
 
-.social-icons {
+.social-team__icons {
   width: 20px;
   height: 20px;
   margin: 12px;
   fill: currentColor;
 }
 
-.item-soc:not(:last-child) {
+.social-team__item:not(:last-child) {
   margin-right: 10px;
 }
 
@@ -641,11 +629,11 @@ p {
   color: #212121;
 }
 
-.customers-list .item:not(:last-child) {
+.customers-list__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.customers-list .link {
+.customers-list__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -657,8 +645,8 @@ p {
   fill: #afb1b8;
 }
 
-.link.active:hover,
-.link.active:focus {
+.customers-list__link.active:hover,
+.customers-list__link.active:focus {
   border-color: var(--acent-color);
   fill: var(--acent-color);
 }
@@ -678,11 +666,11 @@ p {
   margin-bottom: 50px;
 }
 
-.filter-list .filter-item:not(:last-child) {
+.filter-list__item:not(:last-child) {
   margin-right: 8px;
 }
 
-.filter-btn {
+.filter-list__btn {
   border: 0;
   border-radius: 4px;
 
@@ -696,7 +684,7 @@ p {
   color: #212121;
 }
 
-.btn-text {
+.filter-list__btn-text {
   display: block;
   margin-top: 6px;
   margin-bottom: 6px;
@@ -704,7 +692,7 @@ p {
   margin-right: 22px;
 }
 
-.filter-item > .btn-text {
+.filter-list__btn-text {
   font-family: Roboto;
   font-weight: 500;
   font-size: 16px;
@@ -713,8 +701,8 @@ p {
   letter-spacing: 0.03em;
 }
 
-.filter-btn:hover,
-.filter-btn:focus {
+.filter-list__btn:hover,
+.filter-list__btn:focus {
   background-color: var(--acent-color);
   color: var(--background-color);
   cursor: pointer;
@@ -728,7 +716,7 @@ p {
 
 /* *приклади робіт */
 
-.examples-list {
+.examples {
   display: flex;
   flex-wrap: wrap;
   margin-left: -30px;
@@ -859,7 +847,7 @@ p {
   transition: transform var(--duration) var(--timing-function);
 }
 
-.button-close {
+.modal__button-close {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -880,12 +868,12 @@ p {
   transition: color var(--duration) var(--timing-function);
 }
 
-.button-close:hover,
-.button-close:focus {
+.modal__button-close:hover,
+.modal__button-close:focus {
   color: var(--activ-button-color);
 }
 
-.icon-close {
+.modal__icon-close {
   fill: currentColor;
 }
 
@@ -893,7 +881,7 @@ p {
   margin: 40px;
 }
 
-.modal-title {
+.modal-form__title {
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
